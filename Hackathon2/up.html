@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture of Uttar Pradesh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./WhatsApp\ Image\ 2025-03-27\ at\ 14.43.18_ff292165.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        header {
+            background-color: rgba(139, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            position: relative;
+        }
+       
+        nav {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+        function showNextImage() {
+            let images = document.querySelectorAll(".carousel img");
+            images[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add("active");
+        }
+        setInterval(showNextImage, 3000);
+    </script>
+</head>
+<body>
+    <header>
+        
+        उत्तर प्रदेश
+    </header>
+    <nav>
+        <a href="#art">Art</a>
+        <a href="#music">Music</a>
+        <a href="#dance">Dance</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#cuisine">Cuisine</a>
+    </nav>
+    <section id="art">
+        <h2>Art</h2>
+        <p>Uttar Pradesh is known for its rich art forms like Chikankari embroidery, Zardozi, and Mughal miniature paintings.</p>
+    </section>
+    <section id="music">
+        <h2>Music</h2>
+        <p>The state has given birth to Hindustani classical music and legendary musicians like Tansen and Ravi Shankar.</p>
+    </section>
+    <section id="dance">
+        <h2>Dance</h2>
+        <p>Kathak, one of the eight classical dance forms of India, has deep roots in Uttar Pradesh.</p>
+    </section>
+    <section id="festivals">
+        <h2>Festivals</h2>
+        <p>Festivals like Diwali in Ayodhya, Holi in Barsana, and the Kumbh Mela in Prayagraj attract visitors from all over the world.</p>
+    </section>
+    <section id="cuisine">
+        <h2>Cuisine</h2>
+        <p>The state is famous for its Awadhi and Mughlai cuisine, including dishes like kebabs, biryani, and sweets like peda and jalebi.</p>
+    </section>
+    <footer>
+        &copy; 2025 Culture of Uttar Pradesh | All Rights Reserved
+    </footer>
+</body>
+</html>
